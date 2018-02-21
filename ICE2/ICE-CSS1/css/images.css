@@ -1,0 +1,76 @@
+body {
+  position: relative;
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hover,
+.active,
+.focus {
+      position: relative;
+      display: inline-block;
+      float: left;
+      width: 150px;
+      height: auto;
+      border: 3px solid black;
+      margin: 50px;
+      padding: 50px;
+}
+
+.hover,
+.active,
+.focus,
+.square: hover {
+  outline: 3px solid #B0CDEE;
+  z-index: 2;
+}
+
+
+.hover:hover {
+  border-radius: 90%;
+}
+
+.active:active{
+  opacity: 0.5;
+}
+
+.focus:focus {
+  filter: grayscale(100%);
+}
+
+.bar {
+  background-color: #CDCCCD;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+}
+
+.square {
+  background-color: blue;
+  display: inline;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  align-self: center;
+  float: left;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: -webkit-transform 4s ease-in;
+  transition: transform 4s ease-in;
+}
+
+.square:active{
+  background-color: red;
+}
+
+
+.square:focus{
+  -webkit-transform: translateX(1000px) rotate(120deg);
+  transform: translateX(1000px) rotate(120deg);
+
+}
