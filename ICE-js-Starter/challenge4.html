@@ -13,7 +13,8 @@
 
     <script type="text/javascript">
     function checkForm(){
-    	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+    	// Write a function that displays the appropriate error message(s) if a field is left blank.
+			 // Make sure the form action is not performed if either field is blank.
 			var fullname = document.getElementById("fullname");
 			if (fullname.value == "") {
 				var nameError = document.getElementById("nameerrormsg");
@@ -30,8 +31,9 @@
 			}
 			if (!fullnameValue || !streetaddrValue) {
 			return false;
+
 		}
-		
+
     }
     </script>
 </head>

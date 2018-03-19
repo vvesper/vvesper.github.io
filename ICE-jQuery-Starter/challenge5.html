@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Challenge 5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
 	body{
 		margin: 2%;
@@ -36,33 +37,77 @@
 	}
 	</style>
 
-	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at:
-	// https://codepen.io/ColleenEMc/pen/XmZzWw
-	</script>
-</head>
 
+<script>
+
+    $(document).ready(function(){
+      //Use the .attr method to get attributes
+
+      // Use the .text method to update the content:
+      // selector.text(newValue)
+
+      // Use the .css method to update the content:
+      // selector.css(attribute, newValue)
+
+
+        $(".preview" ).on('mouseover focus',showImage);
+          // 1) Take the alt text of the preview picture I just put into focus
+          // 2) Use this to set the text of the image
+				$(".preview").on("mouseout blur", hideImage);
+
+			});
+
+				function showImage() {
+					// console.log(this.src);
+					// console.log($(this).attr("src"));
+
+					var src= this.src;
+					var alt= this.alt;
+					// set variable if you want ^^
+
+					$("#image")
+						.css('background-image', 'url("' + $(this).attr("src") + '")')
+						.text($(this).attr("alt"));
+						// .text(alt);
+					// $("#image").text($(this).attr("alt"));
+						// same as above
+				}
+
+				function hideImage() {
+
+					$("#image")
+						.css('background-image',"")
+						.text("Hover over an image below");
+				}
+        // $("#image").text($(this).attr("alt"));
+        // $("#image").css('background-image', 'url("' + $(this).attr("src") + '")');
+        // })
+				//
+        // $(".preview" ).on('blur mouseleave',function() {
+        // $("#image").text("Hover over an image below");
+        // $("#image").css('background-image', '');
+
+    </script>
+</head>
 <body>
 	<h1>Challenge 5</h1>
 		<div id = "image">
 			Hover over an image below.
 		</div>
 
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
+		<img class = "preview" tabindex = "1"
 			alt = "Styling with a Bandana"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			>
+			tabindex= 1>
 
-
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
+		<img class = "preview" tabindex = "1"
 			alt = "With My Boy"
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";
+			tabindex= 1>
 
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" tabindex = "1"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
-			alt = "Young Puppy";>
+			alt = "Young Puppy";
+			tabindex= 1>
 </body>
 </html>
