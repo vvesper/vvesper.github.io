@@ -1,0 +1,244 @@
+html, body, h1, form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+
+
+header {
+	background-color: gray;
+	background-image: url("https://cdn.pixabay.com/photo/2014/11/14/16/40/honeycomb-530988_1280.jpg");
+	background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+	height: 150px;
+}
+
+h1 {
+	font-size: 5vw;
+	text-align: center;
+	padding-top: 30px;
+	font-style: normal;
+	text-shadow: 1px 1px #FECC67;
+	color: #4D52CD;
+}
+
+
+h1, h2, li, h3, p, footer {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	  text-decoration: none;
+}
+
+h3 {
+	margin-left: 2vw;
+}
+
+nav {
+  background-color: #FECC67;
+  height: 45px;
+  margin-top: 45px;
+	padding-top: 5px;
+}
+
+#nav nav a{
+  color: #4D52CD;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+#nav nav li{
+  display: inline;
+}
+
+#nav nav ul{
+  text-align: center;
+	margin-top: 10px;
+}
+
+#content {
+	padding-top: 20px;
+}
+
+p {
+	margin-left: 10px;
+}
+
+
+footer {
+	background-color: #24110B;
+	color: gray;
+	font-size: 9pt;
+	/* position: fixed; */
+	width: 100%;
+	height: 180px;
+}
+
+.logo {
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+
+.poem {
+	display: inline-block;
+	/* float: left; */
+	/* text-align: left; */
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 50%;
+}
+
+.poem li {
+	list-style-type: none;
+	font-style: italic;
+}
+
+section {
+	position: relative;
+}
+/* img{
+	border: 1px solid black;
+	margin: 10px;
+	padding: 50px;
+} */
+#pics {
+  /* Prevent vertical gaps */
+	display: inline-block;
+	line-height: 0;
+	padding: 20px;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;
+}
+
+#pics img {
+  /* Just in case there are inline attributes */
+  width: 100%;
+  height: auto;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+
+@media (max-width: 1200px) {
+  #pics {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #pics {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #pics {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+	footer {
+		height: 240px;
+	}
+}
+@media (max-width: 400px) {
+  #pics {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+	footer {
+		height: 300px;
+	}
+}
+
+
+.vidcontainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+		margin-top: 60px;
+    height: 0;
+    overflow: hidden;
+		font-size: 10pt;
+}
+
+
+
+iframe {
+	display: inline-block;
+	position: relative;
+	margin-top: 15px;
+}
+
+social {
+	display: inline-block;
+}
+
+
+.icon {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  stroke-width: 0;
+  stroke: #8A8A8A;
+  fill: #8A8A8A;
+}
+
+
+.icon-twitter-square {
+  width: 2em;
+}
+
+.icon-facebook-square {
+  width: 2em;
+}
+
+.icon-google-plus-square {
+  width: 2em;
+}
+
+.icon-instagram {
+  width: 2em;
+}
+
+
+
+aside {
+	display: inline;
+  float: right;
+  width: 20vw;
+  height: 30vh;
+  background-color: #C35918;
+	border-radius: 25px;
+  text-align: center;
+  text-align-last: left;
+  background-image: url("img/lavender-vert-5708.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+aside li{
+	font-size: 1em;
+	list-style-type: none;
+	float: left;
+	color: #8A8A8A;
+}
