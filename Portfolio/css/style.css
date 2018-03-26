@@ -14,7 +14,7 @@ html, body{
 
 header {
 	background-color: gray;
-	background-image: url("https://cdn.pixabay.com/photo/2014/11/14/16/40/honeycomb-530988_1280.jpg");
+	background-image: url("../img/honeycomb.jpg");
 	background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -133,6 +133,34 @@ section {
 	padding: 5px;
 }
 
+.wrapper {
+	display: flex;
+}
+
+
+aside {
+	display: inline;
+  width: 200px;
+  height: 180px;
+  background-color: #C35918;
+	border-radius: 25px;
+  text-align: center;
+  text-align-last: left;
+	color: #FECC67;
+	font-size: 10pt;
+}
+
+aside li{
+	font-size: 1em;
+	list-style-type: none;
+	color: #FECC67;
+}
+
+aside a {
+	font-size: 1em;
+	color: #FECC67;
+	margin-left: 0px;
+}
 
 @media (max-width: 1200px) {
   #pics {
@@ -157,6 +185,17 @@ section {
 	footer {
 		height: 240px;
 	}
+	/* .vidcontainer {
+
+	} */
+	.wrapper {
+		/* display: block; */
+		flex-wrap: wrap;
+	}
+
+	aside {
+		float: none;
+	}
 }
 @media (max-width: 400px) {
   #pics {
@@ -178,6 +217,7 @@ section {
     height: 0;
     overflow: hidden;
 		font-size: 10pt;
+		max-width: 650px;
 }
 
 
@@ -220,25 +260,46 @@ social {
 }
 
 
-
-aside {
-	display: inline;
-  float: right;
-  width: 20vw;
-  height: 30vh;
-  background-color: #C35918;
-	border-radius: 25px;
-  text-align: center;
-  text-align-last: left;
-  background-image: url("img/lavender-vert-5708.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+	max-width: 650px;
 }
 
-aside li{
-	font-size: 1em;
-	list-style-type: none;
-	float: left;
-	color: #8A8A8A;
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9::before {
+  padding-top: 42.857143%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
 }
