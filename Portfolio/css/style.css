@@ -192,11 +192,8 @@ aside a {
 		/* display: block; */
 		flex-wrap: wrap;
 	}
-
-	aside {
-		float: none;
-	}
 }
+
 @media (max-width: 400px) {
   #pics {
   -moz-column-count:    1;
@@ -228,10 +225,14 @@ iframe {
 	margin-top: 15px;
 }
 
-social {
-	display: inline-block;
+.social {
+	display: block;
+	margin-top: 5px;
 }
 
+.copyright {
+	margin-left: 130px;
+}
 
 .icon {
   display: inline-block;
