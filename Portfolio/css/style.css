@@ -11,6 +11,10 @@ html, body{
 	height: 100%;
 }
 
+body {
+	display: inline-block;
+}
+
 
 header {
 	background-color: gray;
@@ -18,7 +22,12 @@ header {
 	background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-	height: 150px;
+	height: 180px;
+
+}
+
+title {
+	font-family: Poppins, sans-serif;
 }
 
 h1 {
@@ -32,21 +41,28 @@ h1 {
 
 
 h1, h2, li, h3, p, footer {
-	font-family: Helvetica, Arial, sans-serif;
+	/* font-family: Allerta, sans-serif; */
+	font-family: Roboto, sans-serif;
 }
 
+h2 {
+	font-size: 2.5vw;
+	text-align: center;
+	color: #4D52CD;
+}
+
+
 a {
-	  text-decoration: none;
+	 text-decoration: none;
 }
 
 h3 {
-	margin-left: 2vw;
+	margin-left: 20px;
 }
 
 nav {
   background-color: #FECC67;
   height: 45px;
-  margin-top: 45px;
 	padding-top: 5px;
 }
 
@@ -59,21 +75,78 @@ nav {
 
 #nav nav li{
   display: inline;
+
 }
 
 #nav nav ul{
   text-align: center;
 	margin-top: 10px;
+	margin-left: 0px;
 }
 
 #content {
-	padding-top: 20px;
+	padding: 20px;
+	display: block;
+	text-align: justify;
 }
+
+.indents {
+	padding-left: 286px;
+	padding-right: 250px;
+}
+
+#nav ul li a.page{
+	color: #F79F28;
+	font-weight: bold;
+}
+
+#nav ul li a.page:before {
+  content: "\2234";
+  color: #F79F28;
+  padding-right: 4px;
+  position: relative;
+  top: 1px;
+}
+#nav ul li a:hover, #nav ul li a:focus, {
+    background-color: #B64E8D;
+    color: gray;
+    font-weight: bold;
+}
+#nav ul li a:hover:before, #nav ul li a:focus:before{
+    content: "\2234";
+  	color: gray;
+  	padding-right: 4px;
+  	position: relative;
+  	top: 1px;
+}
+/*implement menu toogle*/
+#nav.toggle-open ul{
+	display: block;
+}
+
 
 p {
 	margin-left: 10px;
 }
 
+
+.left_img {
+	display: inline-block;
+	float: left;
+	height: 200px;
+	margin-left: 40px;
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.right_img {
+	display: inline-block;
+	float: right;
+	margin-right: 30px;
+}
+
+/* footer stuff */
 
 footer {
 	background-color: #24110B;
@@ -81,7 +154,7 @@ footer {
 	font-size: 9pt;
 	/* position: fixed; */
 	width: 100%;
-	height: 180px;
+	height: 155px;
 }
 
 .logo {
@@ -104,6 +177,8 @@ footer {
 	font-style: italic;
 }
 
+/* end footer stuff */
+
 section {
 	position: relative;
 }
@@ -112,55 +187,136 @@ section {
 	margin: 10px;
 	padding: 50px;
 } */
+
+/* gallery page */
 #pics {
   /* Prevent vertical gaps */
 	display: inline-block;
 	line-height: 0;
-	padding: 20px;
-  -webkit-column-count: 5;
-  -webkit-column-gap:   0px;
-  -moz-column-count:    5;
-  -moz-column-gap:      0px;
-  column-count:         5;
-  column-gap:           0px;
+	padding: 80px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 0px;
+	-moz-column-count: 3;
+	-moz-column-gap: 0px;
+	column-count: 3;
+	column-gap: 0px;
 }
 
 #pics img {
-  /* Just in case there are inline attributes */
-  width: 100%;
-  height: auto;
-	border: 1px solid black;
-	padding: 5px;
+	width: 100% !important;
+	height: auto !important;
 }
+/* end gallery  */
 
-.wrapper {
-	display: flex;
-}
 
 
 aside {
-	display: inline;
+	display: inline-block;
+	float: right;
   width: 200px;
-  height: 180px;
+	height: 150px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
   background-color: #C35918;
-	border-radius: 25px;
-  text-align: center;
-  text-align-last: left;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
 	color: #FECC67;
-	font-size: 10pt;
+	font-size: 9pt;
 }
 
 aside li{
-	font-size: 1em;
 	list-style-type: none;
 	color: #FECC67;
+	float: left;
+}
+
+aside ul{
+	padding-left: 20px;
+	width: 180px;
+	float: none;
 }
 
 aside a {
-	font-size: 1em;
+	/* font-size: 1em; */
 	color: #FECC67;
 	margin-left: 0px;
 }
+
+aside ul li a.page:before {
+  content: "\2234";
+  color: #F79F28;
+  padding-right: 4px;
+  position: relative;
+  top: 1px;
+}
+aside ul li a:hover, aside ul li a:focus, {
+    background-color: #B64E8D;
+    color: #24110B;
+    font-weight: bold;
+}
+aside ul li a:hover:before, aside ul li a:focus:before{
+    content: "\2234";
+  	color: #24110B;
+  	padding-right: 4px;
+  	position: relative;
+  	top: 1px;
+}
+
+/* "help" page styling*/
+
+.edu_head h3, img {
+	display: inline-block;
+	font-size: 25pt;
+	color: #C15924;
+	vertical-align: middle;
+}
+
+.edu_head {
+	margin-top: 20px;
+}
+
+.edu_intro {
+	text-align: justify;
+	width: 560px;
+}
+
+.row{
+  width: 95%;
+  margin: auto;
+}
+
+
+.box {
+  color: black;
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 100%;
+}
+
+.box img{
+	width: 100%;
+}
+/* .a {
+    background-color: green;
+}
+
+.b{
+    background-color: yellow;
+
+}
+
+.c{
+    background-color: red
+}
+
+.d{
+    background-color: green;
+} */
+
+/*
+responsive area */
 
 @media (max-width: 1200px) {
   #pics {
@@ -185,13 +341,6 @@ aside a {
 	footer {
 		height: 240px;
 	}
-	/* .vidcontainer {
-
-	} */
-	.wrapper {
-		/* display: block; */
-		flex-wrap: wrap;
-	}
 }
 
 @media (max-width: 400px) {
@@ -205,12 +354,13 @@ aside a {
 	}
 }
 
+/* Education page */
 
 .vidcontainer {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 35px;
-		margin-top: 60px;
+    padding-top: 25px;
+		margin-top: 40px;
     height: 0;
     overflow: hidden;
 		font-size: 10pt;
@@ -222,16 +372,33 @@ aside a {
 iframe {
 	display: inline-block;
 	position: relative;
-	margin-top: 15px;
+	margin-top: 10px;
 }
+
+
+.content {
+	margin: 30px;
+}
+
+
+/* footer stuff */
+
 
 .social {
 	display: block;
-	margin-top: 5px;
+	margin-left: 132px;
 }
 
+/* .social p{
+	display: inline-block;
+	margin: 0px;
+	vertical-align: middle;
+} */
 .copyright {
 	margin-left: 130px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 10px;
 }
 
 .icon {
@@ -303,4 +470,10 @@ iframe {
 
 .embed-responsive-1by1::before {
   padding-top: 100%;
+}
+
+/* bootstrap */
+h1{
+	line-height: 1;
+	font-weight: 600;
 }
