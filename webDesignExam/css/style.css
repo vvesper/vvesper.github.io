@@ -1,0 +1,49 @@
+body {
+  position: relative;
+  display: inline-block;
+  background-image: url("../images/sun-pattern.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  position: relative;
+  display: inline-block;
+  border: 5px solid blue;
+  padding: 5%;
+  box-sizing: border-box;
+  max-height: 330px;
+}
+
+.box {
+  display: inline-block;
+}
+
+.img1, .img2 {
+  max-width: 50%;
+  height: 100%;
+}
+
+/* .img1 {
+  float:left;
+} */
+
+/* .img2 {
+  float:right;
+} */
+
+.container {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.hideImage-button, .showImage-button {
+  display: inline-block;
+}
