@@ -35,8 +35,8 @@ h1 {
 	text-align: center;
 	padding-top: 30px;
 	font-style: normal;
-	text-shadow: 1px 1px #FECC67;
-	color: #4D52CD;
+	text-shadow: 1px 1px #ffe9c1;
+	color: #3034aa;
 }
 
 
@@ -48,7 +48,7 @@ h1, h2, li, h3, p, footer {
 h2 {
 	font-size: 2.5vw;
 	text-align: center;
-	color: #4D52CD;
+	color: #3034aa;
 }
 
 
@@ -61,13 +61,13 @@ h3 {
 }
 
 nav {
-  background-color: #FECC67;
+  background-color: #ffe9c1;
   height: 45px;
 	padding-top: 5px;
 }
 
 #nav nav a{
-  color: #4D52CD;
+  color: #3034aa;
   text-decoration: none;
   padding: 10px;
 
@@ -97,25 +97,25 @@ nav {
 }
 
 #nav ul li a.page{
-	color: #F79F28;
+	color: #613904;
 	font-weight: bold;
 }
 
 #nav ul li a.page:before {
   content: "\2234";
-  color: #F79F28;
+  color: #613904;
   padding-right: 4px;
   position: relative;
   top: 1px;
 }
 #nav ul li a:hover, #nav ul li a:focus, {
-    background-color: #B64E8D;
-    color: gray;
+    background-color: #3034aa;
+    color: #613904;
     font-weight: bold;
 }
 #nav ul li a:hover:before, #nav ul li a:focus:before{
     content: "\2234";
-  	color: gray;
+  	color: #613904;
   	padding-right: 4px;
   	position: relative;
   	top: 1px;
@@ -221,16 +221,16 @@ aside {
 	margin-top: 20px;
 	margin-left: 20px;
 	margin-bottom: 20px;
-  background-color: #C35918;
+  background-color: #613904;
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
-	color: #FECC67;
+	color: #FFE9C1;
 	font-size: 9pt;
 }
 
 aside li{
 	list-style-type: none;
-	color: #FECC67;
+	color: #FFE9C1;
 	float: left;
 }
 
@@ -242,25 +242,25 @@ aside ul{
 
 aside a {
 	/* font-size: 1em; */
-	color: #FECC67;
+	color: #FFE9C1;
 	margin-left: 0px;
 }
 
 aside ul li a.page:before {
   content: "\2234";
-  color: #F79F28;
+  color: #ffe9c1;
   padding-right: 4px;
   position: relative;
   top: 1px;
 }
 aside ul li a:hover, aside ul li a:focus, {
     background-color: #B64E8D;
-    color: #24110B;
+    color: #ffe9c1;
     font-weight: bold;
 }
 aside ul li a:hover:before, aside ul li a:focus:before{
     content: "\2234";
-  	color: #24110B;
+  	color: #ffe9c1;
   	padding-right: 4px;
   	position: relative;
   	top: 1px;
